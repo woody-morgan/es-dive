@@ -1,8 +1,8 @@
-export function filter(arr, by) {
+export function filter(iterable, by) {
   let filtered = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (by(arr[i])) {
-      filtered.push(arr[i]);
+  for (let it of iterable) {
+    if (by(it)) {
+      filtered.push(it);
     }
   }
   return filtered;

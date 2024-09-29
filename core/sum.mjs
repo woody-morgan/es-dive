@@ -1,7 +1,7 @@
-export function sum(arr) {
+export function sum(iterable) {
   let ret = 0;
-  for (let i = 0; i < arr.length; i++) {
-    ret += arr[i];
+  for (let it of iterable) {
+    ret += it;
   }
 
   return ret;

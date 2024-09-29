@@ -1,8 +1,8 @@
-export function max(arr) {
+export function max(iterable) {
   let ret = 0;
-  for (let i = 0; i < arr.length; i++) {
-    if (ret < arr[i]) {
-      ret = arr[i];
+  for (let it of iterable) {
+    if (ret < it) {
+      ret = it;
     }
   }
 
